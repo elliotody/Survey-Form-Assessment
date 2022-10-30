@@ -9,51 +9,55 @@
     </head>
 
     <body>
-
-        <h1 id="title">What is your <em>Favourite Chocolate</em>?</h1>
-        <p id="description">Help us make better chocolate by filling out this survey with the required information</p>
-
-        <form id="survey-form" action="https://www.happysocks.com/uk">
-
-            <fieldset id="user-info">
-                <label id="name-label">Name : <input id="name" type="text" required placeholder="e.g. Joe Citizen"><em id="required">*</em></label>
-                <label id="email-label">Email Address: <input id="email" type="email" required placeholder="e.g. example@email.com"><em id="required">*</em></label>
-                <label id="number-label">Age: <input id="number" type="number" min="4" max="120" placeholder="e.g. 18"></label>
-            </fieldset>
-
-            <fieldset id="chocolate-questions">
-                <label for="fav-choc-name">What is your favourite chocolate?: <input id="fav-choc-name" type="text" required placeholder="e.g. Freddo Frog"><em id="required">*</em></label>
-                
-                <label for="fav-choc-type">What type of chocolate is it?: </label>
-                <div id="fav-choc-type">
-                    <label for="milk-chocolate">Milk Chocolate<input id="milk-chocolate" type="radio" value="1" name="chocolate-type">
-                    <label for="white-chocolate">White Chocolate<input id="white-chocolate" type="radio" value="2" name="chocolate-type">
-                    <label for="dark-chocolate">Dark Chocolate<input id="dark-chocolate" type="radio" value="3" name="chocolate-type">
-                    <label for="mix-chocolate">Mixture<input id="mix-chocolate" type="radio" value="4" name="chocolate-type">
-                    <label for="other-chocolate">Other Chocolate<input id="other-chocolate" type="radio" value="5" name="chocolate-type">
-                </div>
-
-                <label for="fav-choc-reason">Why is this your favourite chocolate?: <textarea placeholder="e.g. Because it is really chocolatey"></textarea></label>
-                
-                <label for="dropdown">What is your favourite type of packaging material?: </label>
-                <select id="dropdown">
-                    <option value="">(select one)</option>
-                    <option value="1">Aluminum Foil Packaging</option>
-                    <option value="2">PET Packaging</option>
-                    <option value="3">PET Aluminized Packaging</option>
-                    <option value="4">Other</option>
-                </select>
-
-            </fieldset>
+        <main>
             
-            <fieldset id="legal">
-                <label for="terms-and-conditions">I accept the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Terms and Conditions</a> <input id="terms-and-conditions" value="1" type="checkbox" required><em id="required">*</em></label>
-                <label for="product-updates">I would like to recieve emails about ChocolateLand <input id="product-updates" value="2" type="checkbox"></label>
+            <fieldset id="title-and-desc">
+                <h1 id="title">What is your <em class="fav-choc-title">Favourite Chocolate</em>?</h1>
+                <p id="description">Help us make better chocolate by filling out this survey with the required information</p>
             </fieldset>
 
-            <input id="submit" type="submit" value="Submit" />
-        </form>
+            <form id="survey-form" action="https://www.happysocks.com/uk">
 
+                <fieldset id="user-info">
+                    <label id="name-label">Name: <input id="name" type="text" required placeholder="e.g. Joe Citizen"><em class="required">*</em></label>
+                    <label id="email-label">Email Address: <input id="email" type="email" required placeholder="e.g. example@email.com"><em class="required">*</em></label>
+                    <label id="number-label">Age: <input id="number" type="number" min="4" max="120" placeholder="e.g. 18"></label>
+                </fieldset>
+
+                <fieldset id="chocolate-questions">
+                    <label for="fav-choc-name">What is your favourite chocolate?: <input id="fav-choc-name" type="text" required placeholder="e.g. Freddo Frog"><em class="required">*</em></label>
+                    
+                    <label for="fav-choc-type">What type of chocolate is it?: </label>
+                    <div id="fav-choc-type"><h5>
+                        <label for="milk-chocolate">Milk Chocolate<input id="milk-chocolate" type="radio" value="1" name="chocolate-type">
+                        <label for="white-chocolate">White Chocolate<input id="white-chocolate" type="radio" value="2" name="chocolate-type">
+                        <label for="dark-chocolate">Dark Chocolate<input id="dark-chocolate" type="radio" value="3" name="chocolate-type">
+                        <label for="mix-chocolate">Mixture<input id="mix-chocolate" type="radio" value="4" name="chocolate-type">
+                        <label for="other-chocolate">Other Chocolate<input id="other-chocolate" type="radio" value="5" name="chocolate-type">
+                    </div></h5>
+
+                    <label for="fav-choc-reason">Why is this your favourite chocolate?: <textarea placeholder="e.g. Because it is really chocolatey"></textarea></label>
+                    
+                    <label for="dropdown">What is your favourite type of packaging material?: </label>
+                    <select id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Aluminum Foil Packaging</option>
+                        <option value="2">PET Packaging</option>
+                        <option value="3">PET Aluminized Packaging</option>
+                        <option value="4">Other</option>
+                    </select>
+
+                </fieldset>
+                
+                <fieldset id="legal">
+                    <label for="terms-and-conditions">I accept the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Terms and Conditions</a> <input id="terms-and-conditions" value="1" type="checkbox" required><em class="required">*</em></label>
+                    <label for="product-updates">I would like to recieve emails about ChocolateLand <input id="product-updates" value="2" type="checkbox"></label>
+                </fieldset>
+
+                <input id="submit" type="submit" value="Submit" />
+            </form>
+
+        </main>
     </body>
     <footer>
         <p>Check out our products at <a href="https://www.youtube.com/shorts/K-xfVyf64lo">chocolateland.co.uk/products</a></p>
